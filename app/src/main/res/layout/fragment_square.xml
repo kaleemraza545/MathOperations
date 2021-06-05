@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Plane_Geometry.Square">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/square"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:textStyle="bold"
+                    android:textSize="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="105dp">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Side :"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+                <EditText
+                android:id="@+id/s_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="       "
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                  style="@style/Widget.AppCompat.Button.Colored"
+                  android:id="@+id/sq_computeBtn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10.0dip"
+                  android:layout_marginTop="5.0dip"
+                  android:text="Compute"
+                  android:textAllCaps="false"
+                  android:textSize="18.0dip" />
+
+                <Button
+                  style="@style/Widget.AppCompat.Button.Colored"
+                  android:id="@+id/sq_clearBtn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10.0dip"
+                  android:layout_marginTop="5.0dip"
+                  android:text="Clear"
+                  android:textAllCaps="false"
+                  android:textSize="18.0dip" />
+
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginTop="5.0dip"
+              android:orientation="vertical">
+
+              <WebView
+                  android:id="@+id/sq_wv"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="2.0dip"
+                  android:scrollbars="horizontal|vertical"
+                  android:visibility="visible"
+                 android:backgroundTintMode="@color/colorPrimaryDark"
+                  />
+          </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

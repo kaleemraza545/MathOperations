@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.PlaneGeometry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plane Geometry"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    />
+            </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+
+            <Button
+                android:id="@+id/squareBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/square"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"/>
+
+            <Button
+                android:id="@+id/circleBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/circle"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"/>
+
+            <Button
+                android:id="@+id/rectangleBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/reactangle"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"
+                />
+
+            <Button
+                android:id="@+id/semicircleBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/semi_circle"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"/>
+
+            <Button
+                android:id="@+id/rhombusBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/rhombus"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"/>
+
+            <Button
+                android:id="@+id/hexagonBtn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/hexagon"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/btn_color"/>
+
+        </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/plan_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
